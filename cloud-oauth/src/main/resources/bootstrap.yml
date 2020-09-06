@@ -1,0 +1,21 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8080/eureka/
+  instance:
+    prefer-ip-address: true
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:7000/
+      name: config
+      label: master
+      profile: dev
+      failFast: true
+      discovery:
+        enabled: true
+        service-id: cloud-config
+
+
+

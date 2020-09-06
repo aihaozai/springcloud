@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="cloud-gateway" />
+        <module name="cloud-oauth" />
+        <module name="cloud-zuul" />
+        <module name="cloud-consumer" />
+        <module name="cloud-eureka" />
+        <module name="cloud-base" />
+        <module name="cloud-provider" />
+        <module name="cloud-config" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-ouath" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="ouath" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud-base" options="-parameters" />
+      <module name="cloud-config" options="-parameters" />
+      <module name="cloud-consumer" options="-parameters" />
+      <module name="cloud-eureka" options="-parameters" />
+      <module name="cloud-gateway" options="-parameters" />
+      <module name="cloud-oauth" options="-parameters" />
+      <module name="cloud-ouath" options="-parameters" />
+      <module name="cloud-provider" options="-parameters" />
+      <module name="cloud-zuul" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="demo" options="-parameters" />
+      <module name="ouath" options="-parameters" />
+      <module name="springCloud" options="" />
+    </option>
+  </component>
+</project>
